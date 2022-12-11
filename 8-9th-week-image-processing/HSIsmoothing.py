@@ -7,7 +7,7 @@ img = cv2.imread('spring.jpg')
 hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
 h,s,v = cv2.split(hsv)
 
-# 5*5 smoothing filter to each RGB component
+# 5*5 smoothing filter to each HSI component
 blurH = cv2.blur(h,(5,5))
 blurS = cv2.blur(s,(5,5))
 blurV = cv2.blur(v,(5,5))
