@@ -1,7 +1,6 @@
 from PIL import Image
 from PIL import ImageFilter
 
-# Load the image in greyscale
 img = Image.open('spring.jpg')
 
 bl,gr,rd=img.split()
